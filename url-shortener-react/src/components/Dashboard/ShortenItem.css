@@ -1,0 +1,68 @@
+.shorten-item-container {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+.url-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.url-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+.short-url {
+    font-weight: bold;
+    color: #3b82f6;
+    text-decoration: underline;
+}
+.original-url {
+    font-size: 0.875rem;
+    color: #475569;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.copy-section {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.clicks-text {
+    font-size: 0.875rem;
+    color: #475569;
+}
+.copy-button, .analytics-button {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.25rem;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+.copy-button {
+    background-color: #f3f4f6;
+    color: #1e293b; /* <-- This is the corrected line */
+}
+.analytics-button {
+    background-color: #d1d5db;
+}
+
+@media (min-width: 640px) {
+    .url-details {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .url-group {
+        flex-direction: row;
+        align-items: baseline;
+        gap: 1rem;
+    }
+}

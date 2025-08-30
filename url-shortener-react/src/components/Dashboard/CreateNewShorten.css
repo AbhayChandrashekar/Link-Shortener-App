@@ -1,0 +1,61 @@
+.create-shorten-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 0.375rem;
+}
+.create-shorten-form {
+    width: 450px;
+    position: relative;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    padding: 2rem 2rem;
+    border-radius: 0.5rem;
+}
+.form-heading {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 0.75rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #1e293b;
+}
+.divider {
+    margin-top: 0.5rem;
+    margin-bottom: 1.25rem;
+    color: #0f172a;
+}
+.create-button {
+    background: linear-gradient(to right, #3b82f6, #9333ea);
+    font-weight: 600;
+    color: white;
+    width: 8rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.375rem;
+    margin: 0.75rem 0;
+    border: none;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+.create-button:hover {
+    opacity: 0.9;
+}
+.close-button {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.close-icon {
+    color: #1e293b;
+    font-size: 1.875rem;
+}
+@media (max-width: 640px) {
+    .create-shorten-form {
+        width: 360px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
